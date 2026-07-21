@@ -14,7 +14,7 @@ import {
 } from "lucide-react";
 
 const WHATSAPP_NUMBER = "+51942902585";
-const FACEBOOK_URL = "https://www.facebook.com/EstudioContableSanchezCix";
+const FACEBOOK_URL = "https://www.facebook.com/profile.php?id=100088066835082";
 
 // Componente SVG nativo para el ícono de Facebook
 const FacebookIcon = (props: React.SVGProps<SVGSVGElement>) => (
@@ -70,8 +70,8 @@ export default function Footer() {
                   <h3 className="text-white font-black text-lg leading-tight tracking-wide">
                     ESTUDIO CONTABLE
                   </h3>
-                  <p className="text-white text-xs font-bold tracking-widest uppercase">
-                    & Auditoría "Sánchez"
+                  <p className="text-[#A61F1F] text-xs font-bold tracking-widest uppercase">
+                    & Auditoría &quot;Sánchez&quot;
                   </p>
                 </div>
               </div>
@@ -217,7 +217,7 @@ export default function Footer() {
           {/* Sub-Footer Derechos Reservados */}
           <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
             <p>
-              © {currentYear} Estudio Contable & Auditoría "Sánchez". Todos los derechos reservados.
+              © {currentYear} Estudio Contable & Auditoría &quot;Sánchez&quot;. Todos los derechos reservados.
             </p>
             <p className="text-slate-500">
               Desarrollado para máxima conversión y seguridad normativo-tributaria.

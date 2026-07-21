@@ -5,7 +5,7 @@ export const siteConfig = {
   contact: {
     whatsapp: "+51942902585",
     phone: "+51 942 902 585",
-    facebook: "https://www.facebook.com/EstudioContableSanchezCix"
+    facebook: "https://www.facebook.com/profile.php?id=100088066835082"
   }
 };
 

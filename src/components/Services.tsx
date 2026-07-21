@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import Image from "next/image";
+import { withBasePath } from "@/lib/basePath";
 import { 
   Calculator, 
   Receipt, 
@@ -184,7 +184,7 @@ export default function Services() {
             <div className="lg:col-span-5">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white aspect-[4/3] group bg-slate-200">
                 <img
-                  src={currentService.image}
+                  src={withBasePath(currentService.image)}
                   alt={currentService.imageAlt}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   onError={(e) => {

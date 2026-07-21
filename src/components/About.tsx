@@ -2,6 +2,7 @@
 
 import React from "react";
 import { CheckCircle2, Target, ShieldCheck } from "lucide-react";
+import { withBasePath } from "@/lib/basePath";
 
 export default function About() {
   return (
@@ -18,7 +19,7 @@ export default function About() {
               Experiencia y Compromiso que Respaldan su Rentabilidad
             </h2>
             <p className="text-gray-600 text-lg mb-6 leading-relaxed">
-              En el <strong>Estudio Contable & Auditoría "Sánchez"</strong>, no solo procesamos datos; somos su socio estratégico. Nos especializamos en brindar asesoría integral en las áreas Contable, Tributaria, Legal y Financiera, diseñando soluciones a la medida para empresas de múltiples sectores económicos.
+              En el <strong>Estudio Contable & Auditoría &quot;Sánchez&quot;</strong>, no solo procesamos datos; somos su socio estratégico. Nos especializamos en brindar asesoría integral en las áreas Contable, Tributaria, Legal y Financiera, diseñando soluciones a la medida para empresas de múltiples sectores económicos.
             </p>
             
             <ul className="space-y-4 mb-8">
@@ -45,7 +46,7 @@ export default function About() {
             <div className="bg-slate-50 border border-slate-200 rounded-3xl p-8 relative z-10 shadow-xl">
               <div className="flex flex-col items-center text-center space-y-4">
                 <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center shadow-md">
-                  <img src="/logo.png" alt="Sello de Garantía Sánchez" className="w-12 h-12 object-contain" />
+                  <img src={withBasePath("/logo.png")} alt="Sello de Garantía Sánchez" className="w-12 h-12 object-contain" />
                 </div>
                 <h3 className="text-2xl font-black text-[#1A2E5A]">Más de 18 Corporaciones</h3>
                 <p className="text-gray-600">

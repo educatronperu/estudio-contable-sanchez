@@ -3,6 +3,7 @@
 import React, { useState, useMemo } from "react";
 import { clientsData } from "@/data/content";
 import { ClientItem } from "@/types";
+import { withBasePath } from "@/lib/basePath";
 
 // Normalización automática de categorías de acuerdo con la consolidación requerida
 const normalizeCategory = (rawCategory?: string): string => {
@@ -142,7 +143,7 @@ const ClientCard = ({ name, category, logo }: ClientItem) => {
         {hasLogo ? (
           <img
             ref={imgRef}
-            src={logo}
+            src={withBasePath(logo)}
             alt={name}
             onError={() => setImgError(true)}
             className="w-full h-full object-cover rounded-full transition-transform duration-300 group-hover:scale-110"

@@ -2,7 +2,8 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import { Menu, X, Phone, MessageCircle } from "lucide-react";
+import { Menu, X, MessageCircle } from "lucide-react";
+import { withBasePath } from "@/lib/basePath";
 
 const WHATSAPP_NUMBER = "+51942902585";
 
@@ -34,7 +35,7 @@ export default function Navbar() {
             onClick={handleLinkClick}
           >
             <img 
-              src="/logo.png" 
+              src={withBasePath("/logo.png")} 
               alt="Estudio Contable Sánchez" 
               className="h-10 md:h-12 w-auto object-contain"
             />
@@ -43,7 +44,7 @@ export default function Navbar() {
                 ESTUDIO CONTABLE
               </span>
               <span className="text-[10px] md:text-xs font-bold text-[#A61F1F] tracking-widest uppercase">
-                & Auditoría "Sánchez"
+                & Auditoría &quot;Sánchez&quot;
               </span>
             </div>
           </Link>
