@@ -134,7 +134,7 @@ const ClientCard = ({ name, category, logo }: ClientItem) => {
 
   const initials = getInitials(name);
   const hasLogo = logo && logo.trim() !== "" && !imgError;
-  const displayCategory = normalizeCategory(category);
+  //const displayCategory = normalizeCategory(category);
 
   return (
     <div className="flex flex-col items-center justify-center p-5 bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 group text-center h-full">
@@ -163,7 +163,7 @@ const ClientCard = ({ name, category, logo }: ClientItem) => {
       {/* Categoría Normalizada */}
       {category && (
         <span className="text-xs text-slate-500 font-medium mt-1">
-          {displayCategory}
+          {category}
         </span>
       )}
     </div>

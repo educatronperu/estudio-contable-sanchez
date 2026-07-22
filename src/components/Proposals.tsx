@@ -179,7 +179,7 @@ export default function Proposals() {
                 ¿Utiliza un sistema contable propio o prefiere el nuestro?
               </h4>
               <p className="text-gray-600 text-sm mt-1">
-                Nos adaptamos al software de su empresa o le proveemos nuestro sistema contable automatizado sin costos ocultos de implementación[cite: 387].
+                Nos adaptamos al software de su empresa o le proveemos nuestro sistema contable automatizado sin costos ocultos de implementación.
               </p>
             </div>
           </div>
